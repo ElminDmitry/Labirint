@@ -1,1 +1,9 @@
 c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\bin\Debug\Labirint.exe.config
+c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\bin\Debug\Labirint.exe
+c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\bin\Debug\Labirint.pdb
+c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.csprojResolveAssemblyReference.cache
+c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormMenu.resources
+c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.Properties.Resources.resources
+c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.csproj.GenerateResource.Cache
+c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.exe
+c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.pdb

@@ -37,11 +37,11 @@
             this.label_finish_box = new System.Windows.Forms.Label();
             this.label_start = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label_key = new System.Windows.Forms.Label();
-            this.label_door = new System.Windows.Forms.Label();
             this.wall1 = new System.Windows.Forms.Label();
             this.wall2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label_door = new System.Windows.Forms.Label();
+            this.label_key = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label5
@@ -133,29 +133,6 @@
             this.label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label6.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
             // 
-            // label_key
-            // 
-            this.label_key.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label_key.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_key.Location = new System.Drawing.Point(308, 35);
-            this.label_key.Name = "label_key";
-            this.label_key.Size = new System.Drawing.Size(75, 40);
-            this.label_key.TabIndex = 15;
-            this.label_key.Text = "Ключ";
-            this.label_key.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_key.MouseEnter += new System.EventHandler(this.label_key_MouseEnter_2);
-            // 
-            // label_door
-            // 
-            this.label_door.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.label_door.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_door.Location = new System.Drawing.Point(416, 275);
-            this.label_door.Name = "label_door";
-            this.label_door.Size = new System.Drawing.Size(97, 40);
-            this.label_door.TabIndex = 16;
-            this.label_door.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.label_door.MouseEnter += new System.EventHandler(this.label_door_MouseEnter);
-            // 
             // wall1
             // 
             this.wall1.BackColor = System.Drawing.Color.Green;
@@ -183,6 +160,29 @@
             this.timer1.Enabled = true;
             this.timer1.Interval = 900;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label_door
+            // 
+            this.label_door.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label_door.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_door.Location = new System.Drawing.Point(416, 275);
+            this.label_door.Name = "label_door";
+            this.label_door.Size = new System.Drawing.Size(97, 40);
+            this.label_door.TabIndex = 16;
+            this.label_door.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_door.MouseEnter += new System.EventHandler(this.label_door_MouseEnter);
+            // 
+            // label_key
+            // 
+            this.label_key.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.label_key.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.label_key.Location = new System.Drawing.Point(308, 35);
+            this.label_key.Name = "label_key";
+            this.label_key.Size = new System.Drawing.Size(75, 40);
+            this.label_key.TabIndex = 15;
+            this.label_key.Text = "Ключ";
+            this.label_key.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_key.MouseEnter += new System.EventHandler(this.label_key_MouseEnter_2);
             // 
             // FormLevel2
             // 
@@ -221,10 +221,10 @@
         private System.Windows.Forms.Label label_finish_box;
         private System.Windows.Forms.Label label_start;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label_key;
-        private System.Windows.Forms.Label label_door;
         private System.Windows.Forms.Label wall1;
         private System.Windows.Forms.Label wall2;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label_door;
+        private System.Windows.Forms.Label label_key;
     }
 }

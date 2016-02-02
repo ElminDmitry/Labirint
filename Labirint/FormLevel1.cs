@@ -28,7 +28,7 @@ namespace Labirint
             left_boxes = 4;
             label_box1.Visible = true;
             label_box2.Visible = true;
-            label_box4.Visible = true;
+            label_box3.Visible = true;
             label_box4.Visible = true;
             Sound.play_start();
         }

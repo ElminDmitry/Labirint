@@ -19,7 +19,8 @@ namespace Labirint
 
         private void button_start_Click(object sender, EventArgs e)
         {
-            
+            Sound.play_start();
+            start_level1();
         }
 
         private void box_sound_CheckedChanged(object sender, EventArgs e)
@@ -28,7 +29,7 @@ namespace Labirint
             {
                 Sound.sound_on();
                 box_sound.Text = "Звук есть";
-                Sound.play_back();
+                Sound.play_key();
             }
             else
             {
@@ -41,6 +42,12 @@ namespace Labirint
         private void button_exit_Click(object sender, EventArgs e)
         {
             this.Close();
-        }   
+        }
+
+        private void start_level1 ()
+        {
+            FormLevel1 level1 = new FormLevel1();
+            level1.ShowDialog();
+        }
     }
 }

@@ -83,6 +83,24 @@ namespace Labirint.Properties {
         /// <summary>
         ///   Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
         /// </summary>
+        internal static System.IO.UnmanagedMemoryStream Click_05 {
+            get {
+                return ResourceManager.GetStream("Click_05", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream switch_8 {
+            get {
+                return ResourceManager.GetStream("switch_8", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
+        /// </summary>
         internal static System.IO.UnmanagedMemoryStream wav_library_net_music_9 {
             get {
                 return ResourceManager.GetStream("wav_library_net_music_9", resourceCulture);

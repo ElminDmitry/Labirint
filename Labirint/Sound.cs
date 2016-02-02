@@ -9,8 +9,8 @@ namespace Labirint
 {
     static class Sound
     {
-        static SoundPlayer sound_back = new SoundPlayer(Properties.Resources.wav_library_net_music_9);//click_sound
-        //static SoundPlayer sound = new SoundPlayer(Properties.Resources);
+        static SoundPlayer sound_key = new SoundPlayer(Properties.Resources.switch_8);
+        static SoundPlayer sound_start = new SoundPlayer(Properties.Resources.Click_05);
         //static SoundPlayer sound = new SoundPlayer(Properties.Resources);
         //static SoundPlayer sound = new SoundPlayer(Properties.Resources);
         static bool sound_enabled = true;
@@ -25,10 +25,16 @@ namespace Labirint
             sound_enabled = false;
         }
 
-        public static void play_back()
+        public static void play_key()
         {
             if(sound_enabled)
-              sound_back.Play();
+              sound_key.Play();
+        }
+
+        public static void play_start()
+        {
+            if (sound_enabled)
+                sound_start.Play();
         }
     }
 }

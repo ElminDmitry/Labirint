@@ -11,7 +11,7 @@ namespace Labirint
     {
         static SoundPlayer sound_key = new SoundPlayer(Properties.Resources.switch_8);
         static SoundPlayer sound_start = new SoundPlayer(Properties.Resources.Click_05);
-        //static SoundPlayer sound = new SoundPlayer(Properties.Resources);
+        static SoundPlayer sound_fail = new SoundPlayer(Properties.Resources.Click_05);
         //static SoundPlayer sound = new SoundPlayer(Properties.Resources);
         static bool sound_enabled = true;
 
@@ -35,6 +35,12 @@ namespace Labirint
         {
             if (sound_enabled)
                 sound_start.Play();
+        }
+
+        public static void play_fail()
+        {
+            if (sound_enabled)
+                sound_fail.Play();
         }
     }
 }

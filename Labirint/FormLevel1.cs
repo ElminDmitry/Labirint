@@ -26,6 +26,16 @@ namespace Labirint
             Sound.play_start();
         }
 
+        private void finish_game()
+        {
+            Sound.play_fail();
+            DialogResult dr = MessageBox.Show("Вы проиграли, еще раз?", "Сообщение", MessageBoxButtons.YesNo);
+            if (dr == System.Windows.Forms.DialogResult.Yes)
+                start_game();
+            else
+                DialogResult = System.Windows.Forms.DialogResult.Abort;
+        }
+
         private void FormLevel1_Shown(object sender, EventArgs e)
         {
             start_game();
@@ -33,7 +43,12 @@ namespace Labirint
 
         private void label_finish_MouseEnter(object sender, EventArgs e)
         {
-            DialogResult = System.Windows.Forms.DialogResult.OK;
+            DialogResult = System.Windows.Forms.DialogResult.OK;            
+        }
+
+        private void label_finish_MouseEnter_1(object sender, EventArgs e)
+        {
+            finish_game();            
         }
     }
 }

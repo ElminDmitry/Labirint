@@ -44,6 +44,21 @@ namespace Labirint
         private void label3_MouseEnter(object sender, EventArgs e)
         {
             finish_game();
+        }        
+
+        private void label_key_MouseEnter_2(object sender, EventArgs e)
+        {
+            label_key.Visible = false;
         }
+
+        private void label_door_MouseEnter(object sender, EventArgs e)
+        {
+            if (label_key.Visible)
+                finish_game();
+            else
+                label_door.Visible = false;
+        }
+
+        
     }
 }

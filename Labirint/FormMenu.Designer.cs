@@ -43,6 +43,7 @@
             this.button_start.TabIndex = 0;
             this.button_start.Text = "Начать игру";
             this.button_start.UseVisualStyleBackColor = true;
+            this.button_start.Click += new System.EventHandler(this.button_start_Click);
             // 
             // button_exit
             // 
@@ -53,6 +54,7 @@
             this.button_exit.TabIndex = 1;
             this.button_exit.Text = "Выйти";
             this.button_exit.UseVisualStyleBackColor = true;
+            this.button_exit.Click += new System.EventHandler(this.button_exit_Click);
             // 
             // box_sound
             // 
@@ -68,6 +70,7 @@
             this.box_sound.TabIndex = 2;
             this.box_sound.Text = "Звук есть";
             this.box_sound.UseVisualStyleBackColor = false;
+            this.box_sound.CheckedChanged += new System.EventHandler(this.box_sound_CheckedChanged);
             // 
             // FormMenu
             // 

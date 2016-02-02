@@ -79,5 +79,14 @@ namespace Labirint.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Поиск локализованного ресурса типа System.IO.UnmanagedMemoryStream, аналогичного System.IO.MemoryStream.
+        /// </summary>
+        internal static System.IO.UnmanagedMemoryStream wav_library_net_music_9 {
+            get {
+                return ResourceManager.GetStream("wav_library_net_music_9", resourceCulture);
+            }
+        }
     }
 }

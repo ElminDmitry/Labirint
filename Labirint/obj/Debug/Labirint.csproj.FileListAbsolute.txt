@@ -8,3 +8,4 @@ c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\
 c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.exe
 c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.pdb
 C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormLevel1.resources
+C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormLevel2.resources

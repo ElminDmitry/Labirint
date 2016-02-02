@@ -43,12 +43,14 @@ namespace Labirint
 
         private void label_finish_MouseEnter(object sender, EventArgs e)
         {
+            
             DialogResult = System.Windows.Forms.DialogResult.OK;            
         }
 
         private void label_finish_MouseEnter_1(object sender, EventArgs e)
         {
-            finish_game();            
+               finish_game();            
         }
+        
     }
 }

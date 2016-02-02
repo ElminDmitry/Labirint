@@ -46,7 +46,7 @@
             this.label_start.Size = new System.Drawing.Size(75, 40);
             this.label_start.TabIndex = 0;
             this.label_start.Text = "Старт";
-            this.label_start.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_start.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;            
             // 
             // label_finish_box
             // 
@@ -57,7 +57,7 @@
             this.label_finish_box.Size = new System.Drawing.Size(75, 40);
             this.label_finish_box.TabIndex = 1;
             this.label_finish_box.Text = "Финиш";
-            this.label_finish_box.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_finish_box.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;            
             this.label_finish_box.MouseEnter += new System.EventHandler(this.label_finish_MouseEnter);
             // 
             // label1
@@ -68,7 +68,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(16, 409);
             this.label1.TabIndex = 2;
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;            
             this.label1.MouseEnter += new System.EventHandler(this.label_finish_MouseEnter_1);
             // 
             // label2
@@ -79,7 +79,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(19, 409);
             this.label2.TabIndex = 3;
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;            
             this.label2.MouseEnter += new System.EventHandler(this.label_finish_MouseEnter_1);
             // 
             // label3
@@ -90,7 +90,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(513, 16);
             this.label3.TabIndex = 4;
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;            
             this.label3.MouseEnter += new System.EventHandler(this.label_finish_MouseEnter_1);
             // 
             // label4
@@ -101,7 +101,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(513, 17);
             this.label4.TabIndex = 5;
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;            
             this.label4.MouseEnter += new System.EventHandler(this.label_finish_MouseEnter_1);
             // 
             // label5
@@ -112,7 +112,7 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 270);
             this.label5.TabIndex = 6;
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;            
             this.label5.MouseEnter += new System.EventHandler(this.label_finish_MouseEnter_1);
             // 
             // FormLevel1

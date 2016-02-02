@@ -55,10 +55,13 @@ namespace Labirint
         private void start_level2()
         {
             Sound.play_start();
-            //FormLevel2 level2 = new FormLevel2();
-            //DialogResult dr = level1.ShowDialog();
-            //if (dr == System.Windows.Forms.DialogResult.OK)
-            //    start_level2();
+            FormLevel2 level2 = new FormLevel2();
+            DialogResult dr = level2.ShowDialog();
+            if (dr == System.Windows.Forms.DialogResult.OK)
+            {
+                Sound.play_win();
+                start_level2();
+            }                
         }
     }
 }

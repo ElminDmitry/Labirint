@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -38,11 +39,14 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label_key = new System.Windows.Forms.Label();
             this.label_door = new System.Windows.Forms.Label();
+            this.wall1 = new System.Windows.Forms.Label();
+            this.wall2 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // label5
             // 
-            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label5.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label5.Location = new System.Drawing.Point(389, 15);
             this.label5.Name = "label5";
@@ -53,7 +57,7 @@
             // 
             // label4
             // 
-            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label4.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label4.Location = new System.Drawing.Point(12, 391);
             this.label4.Name = "label4";
@@ -64,7 +68,7 @@
             // 
             // label3
             // 
-            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label3.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label3.Location = new System.Drawing.Point(12, -1);
             this.label3.Name = "label3";
@@ -75,7 +79,7 @@
             // 
             // label2
             // 
-            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label2.Location = new System.Drawing.Point(506, -1);
             this.label2.Name = "label2";
@@ -86,7 +90,7 @@
             // 
             // label1
             // 
-            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(0, -1);
             this.label1.Name = "label1";
@@ -105,6 +109,7 @@
             this.label_finish_box.TabIndex = 8;
             this.label_finish_box.Text = "Финиш";
             this.label_finish_box.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label_finish_box.MouseEnter += new System.EventHandler(this.label_finish_box_MouseEnter);
             // 
             // label_start
             // 
@@ -119,7 +124,7 @@
             // 
             // label6
             // 
-            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.label6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label6.Location = new System.Drawing.Point(267, 15);
             this.label6.Name = "label6";
@@ -151,6 +156,34 @@
             this.label_door.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_door.MouseEnter += new System.EventHandler(this.label_door_MouseEnter);
             // 
+            // wall1
+            // 
+            this.wall1.BackColor = System.Drawing.Color.Green;
+            this.wall1.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.wall1.Location = new System.Drawing.Point(0, 116);
+            this.wall1.Name = "wall1";
+            this.wall1.Size = new System.Drawing.Size(513, 33);
+            this.wall1.TabIndex = 17;
+            this.wall1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.wall1.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            // 
+            // wall2
+            // 
+            this.wall2.BackColor = System.Drawing.Color.Green;
+            this.wall2.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.wall2.Location = new System.Drawing.Point(12, 209);
+            this.wall2.Name = "wall2";
+            this.wall2.Size = new System.Drawing.Size(513, 33);
+            this.wall2.TabIndex = 18;
+            this.wall2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.wall2.MouseEnter += new System.EventHandler(this.label3_MouseEnter);
+            // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 900;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // FormLevel2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -167,6 +200,9 @@
             this.Controls.Add(this.label_finish_box);
             this.Controls.Add(this.label_start);
             this.Controls.Add(this.label_door);
+            this.Controls.Add(this.wall1);
+            this.Controls.Add(this.wall2);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FormLevel2";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormLevel2";
@@ -187,5 +223,8 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label_key;
         private System.Windows.Forms.Label label_door;
+        private System.Windows.Forms.Label wall1;
+        private System.Windows.Forms.Label wall2;
+        private System.Windows.Forms.Timer timer1;
     }
 }

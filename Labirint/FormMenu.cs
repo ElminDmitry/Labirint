@@ -59,9 +59,14 @@ namespace Labirint
             DialogResult dr = level2.ShowDialog();
             if (dr == System.Windows.Forms.DialogResult.OK)
             {
-                Sound.play_win();
-                start_level2();
+                start_youwin();
             }                
+        }
+
+        private void start_youwin()
+        {
+            Sound.play_win();
+            MessageBox.Show("Вы прошли все лабиринты!", "Поздравляем");
         }
     }
 }

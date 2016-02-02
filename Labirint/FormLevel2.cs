@@ -23,6 +23,10 @@ namespace Labirint
             point = label_start.Location;
             point.Offset(label_start.Width / 2, label_start.Height / 2);
             Cursor.Position = PointToScreen(point);
+            label_key.Visible = true;
+            label_door.Visible = true;
+            wall1.Visible = true;
+            wall2.Visible = false;
             Sound.play_start();
         }
 
@@ -49,6 +53,7 @@ namespace Labirint
         private void label_key_MouseEnter_2(object sender, EventArgs e)
         {
             label_key.Visible = false;
+            Sound.play_key();
         }
 
         private void label_door_MouseEnter(object sender, EventArgs e)
@@ -56,7 +61,21 @@ namespace Labirint
             if (label_key.Visible)
                 finish_game();
             else
+            {
                 label_door.Visible = false;
+                Sound.play_key();   
+            }
+        }
+
+        private void label_finish_box_MouseEnter(object sender, EventArgs e)
+        {
+            DialogResult = System.Windows.Forms.DialogResult.OK;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            wall1.Visible = !wall1.Visible;
+            wall2.Visible = !wall2.Visible;
         }
 
         

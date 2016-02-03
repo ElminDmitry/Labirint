@@ -45,7 +45,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
@@ -137,9 +136,9 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label_finish_box10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
             this.label_finish_box10.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_finish_box10.Location = new System.Drawing.Point(364, 235);
+            this.label_finish_box10.Location = new System.Drawing.Point(367, 335);
             this.label_finish_box10.Name = "label_finish_box10";
-            this.label_finish_box10.Size = new System.Drawing.Size(142, 126);
+            this.label_finish_box10.Size = new System.Drawing.Size(139, 78);
             this.label_finish_box10.TabIndex = 63;
             this.label_finish_box10.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label_finish_box10.MouseEnter += new System.EventHandler(this.label_finish_box_MouseEnter);
@@ -194,7 +193,7 @@
             this.label13.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label13.Location = new System.Drawing.Point(501, 205);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(35, 165);
+            this.label13.Size = new System.Drawing.Size(35, 254);
             this.label13.TabIndex = 55;
             this.label13.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.label13.MouseEnter += new System.EventHandler(this.label6_MouseEnter);
@@ -203,7 +202,7 @@
             // 
             this.label19.BackColor = System.Drawing.Color.DarkSlateGray;
             this.label19.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label19.Location = new System.Drawing.Point(415, 205);
+            this.label19.Location = new System.Drawing.Point(415, 305);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(121, 30);
             this.label19.TabIndex = 72;
@@ -225,7 +224,7 @@
             // 
             this.label6.BackColor = System.Drawing.Color.DarkSlateGray;
             this.label6.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(333, 205);
+            this.label6.Location = new System.Drawing.Point(333, 305);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(86, 30);
             this.label6.TabIndex = 75;
@@ -240,16 +239,6 @@
             this.label8.Size = new System.Drawing.Size(35, 52);
             this.label8.TabIndex = 76;
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label11
-            // 
-            this.label11.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.label11.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label11.Location = new System.Drawing.Point(452, 361);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(84, 98);
-            this.label11.TabIndex = 77;
-            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label20
             // 
@@ -387,7 +376,7 @@
             this.label25.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label25.Location = new System.Drawing.Point(403, 68);
             this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(27, 102);
+            this.label25.Size = new System.Drawing.Size(27, 205);
             this.label25.TabIndex = 92;
             this.label25.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -397,7 +386,7 @@
             this.label29.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label29.Location = new System.Drawing.Point(438, 68);
             this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(27, 102);
+            this.label29.Size = new System.Drawing.Size(27, 205);
             this.label29.TabIndex = 93;
             this.label29.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
@@ -539,7 +528,7 @@
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label_door.BackColor = System.Drawing.Color.SkyBlue;
             this.label_door.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_door.Location = new System.Drawing.Point(336, 413);
+            this.label_door.Location = new System.Drawing.Point(267, 413);
             this.label_door.Name = "label_door";
             this.label_door.Size = new System.Drawing.Size(32, 46);
             this.label_door.TabIndex = 108;
@@ -579,7 +568,6 @@
             this.Controls.Add(this.label22);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label20);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label19);
@@ -622,7 +610,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Label label22;

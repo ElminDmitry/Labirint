@@ -65,6 +65,12 @@
     <Compile Include="FormLevel3.Designer.cs">
       <DependentUpon>FormLevel3.cs</DependentUpon>
     </Compile>
+    <Compile Include="FormLevel4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLevel4.Designer.cs">
+      <DependentUpon>FormLevel4.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormMenu.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -82,6 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FormLevel3.resx">
       <DependentUpon>FormLevel3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLevel4.resx">
+      <DependentUpon>FormLevel4.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormMenu.resx">
       <DependentUpon>FormMenu.cs</DependentUpon>

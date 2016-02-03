@@ -70,8 +70,16 @@ namespace Labirint
             DialogResult dr = level3.ShowDialog();
             if (dr == System.Windows.Forms.DialogResult.OK)
             {
-                start_youwin();
+                start_level4();
             }
+        }
+        
+        private void start_level4()
+        {
+            FormLevel4 level4 = new FormLevel4();
+            DialogResult dr = level4.ShowDialog();
+            if (dr == System.Windows.Forms.DialogResult.OK)
+                start_youwin();
         }
 
         private void start_youwin()

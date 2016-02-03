@@ -10,3 +10,17 @@ c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\
 C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormLevel1.resources
 C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormLevel2.resources
 C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormLevel3.resources
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\bin\Debug\Labirint.exe.config
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.exe
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.pdb
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.csprojResolveAssemblyReference.cache
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.FormLevel1.resources
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.FormLevel2.resources
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.FormLevel3.resources
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.FormLevel4.resources
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.FormMenu.resources
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.Properties.Resources.resources
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.csproj.GenerateResource.Cache
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\bin\Debug\Labirint.exe
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\bin\Debug\Labirint.pdb
+C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.FormLevel5.resources

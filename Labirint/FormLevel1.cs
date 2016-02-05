@@ -36,11 +36,11 @@ namespace Labirint
         private void finish_game()
         {
             Sound.play_fail();
-            DialogResult dr = MessageBox.Show("Вы проиграли, еще раз?", "Сообщение", MessageBoxButtons.YesNo);
-            if (dr == System.Windows.Forms.DialogResult.Yes)
+           // DialogResult dr = MessageBox.Show("Вы проиграли, еще раз?", "Сообщение", MessageBoxButtons.YesNo);
+         //   if (dr == System.Windows.Forms.DialogResult.Yes)
                 start_game();
-            else
-                DialogResult = System.Windows.Forms.DialogResult.Abort;
+         //   else
+             //   DialogResult = System.Windows.Forms.DialogResult.Abort;
         }
 
         private void FormLevel1_Shown(object sender, EventArgs e)

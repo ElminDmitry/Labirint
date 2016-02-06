@@ -10,12 +10,12 @@ using System.Windows.Forms;
 
 namespace Labirint
 {
-    public partial class FormLevel1 : Form
+    public partial class Level1 : Form
     {
         int left_boxes;
         int cheat_click = 0;
 
-        public FormLevel1()
+        public Level1()
         {
             InitializeComponent();            
         }

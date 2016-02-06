@@ -1,6 +1,6 @@
 ﻿namespace Labirint
 {
-    partial class FormMenu
+    partial class Menu
     {
         /// <summary>
         /// Требуется переменная конструктора.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormMenu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
             this.button_start = new System.Windows.Forms.Button();
             this.button_exit = new System.Windows.Forms.Button();
             this.box_sound = new System.Windows.Forms.CheckBox();

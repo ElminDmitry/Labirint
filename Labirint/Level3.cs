@@ -10,17 +10,14 @@ using System.Windows.Forms;
 
 namespace Labirint
 {
-    public partial class FormLevel4 : Form
+    public partial class Level3 : Form
     {
-        private readonly Timer timer2;
+        int left_boxes;
         int cheat_click;
-        
-        public FormLevel4()
+
+        public Level3()
         {
             InitializeComponent();
-            timer2 = new Timer();
-            timer2.Interval = 2000;
-            
         }
 
         private void start_game()
@@ -30,9 +27,15 @@ namespace Labirint
             point.Offset(label_start.Width / 2, label_start.Height / 2);
             Cursor.Position = PointToScreen(point);            
             wall1.Visible = true;
-            wall2.Visible = true;
+            wall2.Visible = false;
+            label_box1.Visible = true;
+            label_box2.Visible = true;
+            label_box3.Visible = true;
+            label_box4.Visible = true;
+            label_box5.Visible = true;
+            left_boxes = 5;
             cheat_click = 0;
-            Sound.play_start();        
+            Sound.play_start();
         }
 
         private void finish_game()
@@ -42,21 +45,21 @@ namespace Labirint
             if (dr == System.Windows.Forms.DialogResult.Yes)
                 start_game();
             else
-               DialogResult = System.Windows.Forms.DialogResult.Abort;
+                DialogResult = System.Windows.Forms.DialogResult.Abort;
         }
 
         private void label_finish_box_MouseEnter(object sender, EventArgs e)
         {
             if (cheat_click != 0)
-            {
-                MessageBox.Show("Клик мышкой запрещен!", "Предупреждение");
-                start_game();
+            {                               
+                    MessageBox.Show("Клик мышкой запрещен!", "Предупреждение");
+                    start_game();                
             }
-            else
+            if (left_boxes == 0)
                 DialogResult = System.Windows.Forms.DialogResult.OK;
         }
 
-        private void FormLevel4_Shown(object sender, EventArgs e)
+        private void FormLevel3_Shown(object sender, EventArgs e)
         {
             start_game();
         }
@@ -66,25 +69,27 @@ namespace Labirint
             finish_game();
         }
 
-        private void timer2_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            wall1.Visible = true;
-            wall2.Visible = true;
+            wall1.Visible = !wall1.Visible;
+            wall2.Visible = !wall2.Visible;
         }
 
-        private void button1_MouseUp(object sender, MouseEventArgs e)
+        private void label_box2_MouseEnter(object sender, EventArgs e)
         {
-            timer2.Tick += timer2_Tick;
-            timer2.Enabled = false;
-            wall1.Visible = false;
-            wall2.Visible = false;
-            timer2.Enabled = true;
+            Sound.play_key();
+            left_boxes--;
+            ((Label)sender).Visible = false;
         }
 
-        private void FormLevel4_MouseDown(object sender, MouseEventArgs e)
+        private void FormLevel3_MouseDown(object sender, MouseEventArgs e)
         {
             cheat_click++;
         }
-                   
+
+
+
+
+
     }
 }

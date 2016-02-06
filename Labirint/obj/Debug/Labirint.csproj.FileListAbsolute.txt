@@ -2,14 +2,10 @@ c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\
 c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\bin\Debug\Labirint.exe
 c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\bin\Debug\Labirint.pdb
 c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.csprojResolveAssemblyReference.cache
-c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormMenu.resources
 c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.Properties.Resources.resources
 c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.csproj.GenerateResource.Cache
 c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.exe
 c:\users\дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.pdb
-C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormLevel1.resources
-C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormLevel2.resources
-C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormLevel3.resources
 C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\bin\Debug\Labirint.exe.config
 C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.exe
 C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.pdb
@@ -24,5 +20,9 @@ C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.csproj.Gen
 C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\bin\Debug\Labirint.exe
 C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\bin\Debug\Labirint.pdb
 C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.FormLevel5.resources
-C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormLevel4.resources
-C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormLevel5.resources
+C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.Level1.resources
+C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.Level2.resources
+C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.Level3.resources
+C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.Level4.resources
+C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.Menu.resources
+C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.Level5.resources

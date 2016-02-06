@@ -21,12 +21,13 @@ using System.Windows.Forms;
 
 namespace Labirint
 {
-    public partial class FormLevel5 : Form
+    public partial class Level5 : Form
     {
         int cheat_click;
-        int c = 30;
+        int check_time;
+        int finish_time;
    
-        public FormLevel5()
+        public Level5()
         {
             InitializeComponent();                    
         }
@@ -38,6 +39,10 @@ namespace Labirint
             point.Offset(label_start.Width / 2, label_start.Height / 2);
             Cursor.Position = PointToScreen(point);            
             label_door.Visible = true;
+            check_time = 30;
+            timer_finish.Stop();
+            label_finish_box10.Text = " ";            
+            timer1.Enabled = true;
             Sound.play_start();            
         
         }
@@ -45,11 +50,13 @@ namespace Labirint
         private void finish_game()
         {
             Sound.play_fail();
+            timer_finish.Stop();
+            timer1.Stop();
             DialogResult dr = MessageBox.Show("Вы проиграли, еще раз?", "Сообщение", MessageBoxButtons.YesNo);
-            if (dr == System.Windows.Forms.DialogResult.Yes)
-                start_game();
+            if (dr == System.Windows.Forms.DialogResult.Yes)                            
+                start_game();            
             else
-               DialogResult = System.Windows.Forms.DialogResult.Abort;
+                DialogResult = System.Windows.Forms.DialogResult.Abort;
         }
 
         private void label_finish_box_MouseEnter(object sender, EventArgs e)
@@ -60,37 +67,59 @@ namespace Labirint
                 start_game();
             }
             else
+            {
+                timer_finish.Stop();
                 DialogResult = System.Windows.Forms.DialogResult.OK;
+            }
         }
 
         private void FormLevel4_Shown(object sender, EventArgs e)
         {
             start_game();
-        }
-
-        private void label6_MouseEnter(object sender, EventArgs e)
-        {
-            finish_game();
-        }
-
-        private void timer2_Tick(object sender, EventArgs e)
-        {
-            label_door.Visible = true;
-        }        
+        }                        
 
         private void FormLevel5_MouseDown(object sender, MouseEventArgs e)
         {
             cheat_click++;
-        }
+        }        
 
         private void timer1_Tick(object sender, EventArgs e)
         {
-
-            if (c >= 0)
-                label_key.Text = c--.ToString();
+            if (check_time >= 0)
+                label_key.Text = check_time--.ToString();
             else
+            {
                 timer1.Stop();
+                MessageBox.Show("Время вышло!");
+                start_game();
+            }
+        }       
+
+        private void label_key_MouseEnter(object sender, EventArgs e)
+        {
+            timer_finish.Enabled = true;
+            label_door.Visible = false;
+            timer1.Stop();
+            label_key.Text = "";
+            finish_time = 10;
         }
+
+        private void timer_finish_Tick(object sender, EventArgs e)
+        {
+            if (finish_time >= 0)
+                label_finish_box10.Text = finish_time--.ToString();
+            else
+            {
+                timer_finish.Stop();
+                MessageBox.Show("Время вышло!");
+                start_game();
+            }
+        }
+
+        private void label3_MouseEnter(object sender, EventArgs e)
+        {
+            finish_game();
+        }            
 
                    
     }

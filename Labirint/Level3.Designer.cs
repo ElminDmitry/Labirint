@@ -1,6 +1,6 @@
 ﻿namespace Labirint
 {
-    partial class FormLevel3
+    partial class Level3
     {
         /// <summary>
         /// Required designer variable.

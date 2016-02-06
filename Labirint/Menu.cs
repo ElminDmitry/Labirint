@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Labirint
 {
-    public partial class FormMenu : Form
+    public partial class Menu : Form
     {
-        public FormMenu()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -46,7 +46,7 @@ namespace Labirint
 
         private void start_level1 ()
         {
-            FormLevel1 level1 = new FormLevel1();
+            Level1 level1 = new Level1();
             DialogResult dr = level1.ShowDialog();
             if (dr == System.Windows.Forms.DialogResult.OK)
                 start_level2();
@@ -55,7 +55,7 @@ namespace Labirint
         private void start_level2()
         {
             Sound.play_start();
-            FormLevel2 level2 = new FormLevel2();
+            Level2 level2 = new Level2();
             DialogResult dr = level2.ShowDialog();
             if (dr == System.Windows.Forms.DialogResult.OK)            
                 start_level3();                            
@@ -64,7 +64,7 @@ namespace Labirint
         private void start_level3()
         {
             Sound.play_start();
-            FormLevel3 level3 = new FormLevel3();
+            Level3 level3 = new Level3();
             DialogResult dr = level3.ShowDialog();
             if (dr == System.Windows.Forms.DialogResult.OK)            
                 start_level4();            
@@ -73,7 +73,7 @@ namespace Labirint
         private void start_level4()
         {
             Sound.play_start();
-            FormLevel4 level4 = new FormLevel4();
+            Level4 level4 = new Level4();
             DialogResult dr = level4.ShowDialog();
             if (dr == System.Windows.Forms.DialogResult.OK)
                 start_level5();
@@ -82,7 +82,7 @@ namespace Labirint
         private void start_level5()
         {
             Sound.play_start();
-            FormLevel5 level5 = new FormLevel5();
+            Level5 level5 = new Level5();
             DialogResult dr = level5.ShowDialog();
             if (dr == System.Windows.Forms.DialogResult.OK)
                 start_youwin();

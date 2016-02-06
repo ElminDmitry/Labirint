@@ -12,6 +12,8 @@ namespace Labirint
 {
     public partial class FormLevel2 : Form
     {
+        int cheat_click;
+        
         public FormLevel2()
         {
             InitializeComponent();
@@ -25,6 +27,7 @@ namespace Labirint
             Cursor.Position = PointToScreen(point);
             label_key.Visible = true;
             label_door.Visible = true;
+            cheat_click = 0;
             wall1.Visible = true;
             wall2.Visible = false;
             Sound.play_start();
@@ -69,13 +72,24 @@ namespace Labirint
 
         private void label_finish_box_MouseEnter(object sender, EventArgs e)
         {
-            DialogResult = System.Windows.Forms.DialogResult.OK;
+            if (cheat_click != 0)
+            {
+                MessageBox.Show("Клик мышкой запрещен!", "Предупреждение");
+                start_game();
+            }
+            else
+                DialogResult = System.Windows.Forms.DialogResult.OK;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
         {
             wall1.Visible = !wall1.Visible;
             wall2.Visible = !wall2.Visible;
+        }
+
+        private void FormLevel2_MouseDown(object sender, MouseEventArgs e)
+        {
+            cheat_click++;
         }
 
         

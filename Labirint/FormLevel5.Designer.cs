@@ -130,6 +130,12 @@
             this.label_start.TabIndex = 19;
             this.label_start.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // timer1
+            // 
+            this.timer1.Enabled = true;
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // label_finish_box10
             // 
             this.label_finish_box10.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -588,6 +594,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormLevel3";
             this.Shown += new System.EventHandler(this.FormLevel4_Shown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormLevel5_MouseDown);
             this.ResumeLayout(false);
 
         }

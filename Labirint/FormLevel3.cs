@@ -13,7 +13,8 @@ namespace Labirint
     public partial class FormLevel3 : Form
     {
         int left_boxes;
-        
+        int cheat_click;
+
         public FormLevel3()
         {
             InitializeComponent();
@@ -33,6 +34,7 @@ namespace Labirint
             label_box4.Visible = true;
             label_box5.Visible = true;
             left_boxes = 5;
+            cheat_click = 0;
             Sound.play_start();
         }
 
@@ -48,6 +50,11 @@ namespace Labirint
 
         private void label_finish_box_MouseEnter(object sender, EventArgs e)
         {
+            if (cheat_click != 0)
+            {                               
+                    MessageBox.Show("Клик мышкой запрещен!", "Предупреждение");
+                    start_game();                
+            }
             if (left_boxes == 0)
                 DialogResult = System.Windows.Forms.DialogResult.OK;
         }
@@ -73,6 +80,11 @@ namespace Labirint
             Sound.play_key();
             left_boxes--;
             ((Label)sender).Visible = false;
+        }
+
+        private void FormLevel3_MouseDown(object sender, MouseEventArgs e)
+        {
+            cheat_click++;
         }
 
 

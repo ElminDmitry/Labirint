@@ -549,6 +549,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormLevel3";
             this.Shown += new System.EventHandler(this.FormLevel4_Shown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormLevel4_MouseDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

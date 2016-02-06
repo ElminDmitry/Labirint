@@ -269,8 +269,8 @@
             this.Name = "FormLevel3";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormLevel3";
-      //      this.Load += new System.EventHandler(this.FormLevel3_Load);
             this.Shown += new System.EventHandler(this.FormLevel3_Shown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormLevel3_MouseDown);
             this.ResumeLayout(false);
 
         }

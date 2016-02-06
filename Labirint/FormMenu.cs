@@ -20,7 +20,7 @@ namespace Labirint
         private void button_start_Click(object sender, EventArgs e)
         {
             Sound.play_start();
-            start_level1();
+            start_level5();
         }
 
         private void box_sound_CheckedChanged(object sender, EventArgs e)
@@ -57,10 +57,8 @@ namespace Labirint
             Sound.play_start();
             FormLevel2 level2 = new FormLevel2();
             DialogResult dr = level2.ShowDialog();
-            if (dr == System.Windows.Forms.DialogResult.OK)
-            {
-                start_level3();
-            }                
+            if (dr == System.Windows.Forms.DialogResult.OK)            
+                start_level3();                            
         }
 
         private void start_level3()
@@ -68,16 +66,24 @@ namespace Labirint
             Sound.play_start();
             FormLevel3 level3 = new FormLevel3();
             DialogResult dr = level3.ShowDialog();
-            if (dr == System.Windows.Forms.DialogResult.OK)
-            {
-                start_level4();
-            }
+            if (dr == System.Windows.Forms.DialogResult.OK)            
+                start_level4();            
         }
         
         private void start_level4()
         {
+            Sound.play_start();
             FormLevel4 level4 = new FormLevel4();
             DialogResult dr = level4.ShowDialog();
+            if (dr == System.Windows.Forms.DialogResult.OK)
+                start_level5();
+        }
+
+        private void start_level5()
+        {
+            Sound.play_start();
+            FormLevel5 level5 = new FormLevel5();
+            DialogResult dr = level5.ShowDialog();
             if (dr == System.Windows.Forms.DialogResult.OK)
                 start_youwin();
         }

@@ -24,3 +24,5 @@ C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.csproj.Gen
 C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\bin\Debug\Labirint.exe
 C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\bin\Debug\Labirint.pdb
 C:\Users\Arthur\Documents\GitHub\Labirint\Labirint\obj\Debug\Labirint.FormLevel5.resources
+C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormLevel4.resources
+C:\Users\Дмитрий\documents\visual studio 2012\Projects\Labirint\Labirint\obj\Debug\Labirint.FormLevel5.resources

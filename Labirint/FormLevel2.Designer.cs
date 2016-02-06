@@ -176,7 +176,7 @@
             // 
             this.label_key.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.label_key.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label_key.Location = new System.Drawing.Point(308, 35);
+            this.label_key.Location = new System.Drawing.Point(308, 26);
             this.label_key.Name = "label_key";
             this.label_key.Size = new System.Drawing.Size(75, 40);
             this.label_key.TabIndex = 15;
@@ -207,6 +207,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "FormLevel2";
             this.Shown += new System.EventHandler(this.FormLevel2_Shown);
+            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.FormLevel2_MouseDown);
             this.ResumeLayout(false);
 
         }

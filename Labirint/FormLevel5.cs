@@ -23,14 +23,12 @@ namespace Labirint
 {
     public partial class FormLevel5 : Form
     {
-        private readonly Timer timer2;
-        
+        int cheat_click;
+        int c = 30;
+   
         public FormLevel5()
         {
-            InitializeComponent();
-            timer2 = new Timer();
-            timer2.Interval = 2000;
-            
+            InitializeComponent();                    
         }
 
         private void start_game()
@@ -40,8 +38,8 @@ namespace Labirint
             point.Offset(label_start.Width / 2, label_start.Height / 2);
             Cursor.Position = PointToScreen(point);            
             label_door.Visible = true;
-
-            Sound.play_start();        
+            Sound.play_start();            
+        
         }
 
         private void finish_game()
@@ -56,7 +54,13 @@ namespace Labirint
 
         private void label_finish_box_MouseEnter(object sender, EventArgs e)
         {
-            DialogResult = System.Windows.Forms.DialogResult.OK;
+            if (cheat_click != 0)
+            {
+                MessageBox.Show("Клик мышкой запрещен!", "Предупреждение");
+                start_game();
+            }
+            else
+                DialogResult = System.Windows.Forms.DialogResult.OK;
         }
 
         private void FormLevel4_Shown(object sender, EventArgs e)
@@ -72,16 +76,20 @@ namespace Labirint
         private void timer2_Tick(object sender, EventArgs e)
         {
             label_door.Visible = true;
+        }        
 
+        private void FormLevel5_MouseDown(object sender, MouseEventArgs e)
+        {
+            cheat_click++;
         }
 
-        private void button1_MouseUp(object sender, MouseEventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)
         {
-            timer2.Tick += timer2_Tick;
-            timer2.Enabled = false;
-            label_door.Visible = false;
 
-            timer2.Enabled = true;
+            if (c >= 0)
+                label_key.Text = c--.ToString();
+            else
+                timer1.Stop();
         }
 
                    

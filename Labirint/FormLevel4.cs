@@ -13,6 +13,7 @@ namespace Labirint
     public partial class FormLevel4 : Form
     {
         private readonly Timer timer2;
+        int cheat_click;
         
         public FormLevel4()
         {
@@ -30,6 +31,7 @@ namespace Labirint
             Cursor.Position = PointToScreen(point);            
             wall1.Visible = true;
             wall2.Visible = true;
+            cheat_click = 0;
             Sound.play_start();        
         }
 
@@ -45,7 +47,13 @@ namespace Labirint
 
         private void label_finish_box_MouseEnter(object sender, EventArgs e)
         {
-            DialogResult = System.Windows.Forms.DialogResult.OK;
+            if (cheat_click != 0)
+            {
+                MessageBox.Show("Клик мышкой запрещен!", "Предупреждение");
+                start_game();
+            }
+            else
+                DialogResult = System.Windows.Forms.DialogResult.OK;
         }
 
         private void FormLevel4_Shown(object sender, EventArgs e)
@@ -71,6 +79,11 @@ namespace Labirint
             wall1.Visible = false;
             wall2.Visible = false;
             timer2.Enabled = true;
+        }
+
+        private void FormLevel4_MouseDown(object sender, MouseEventArgs e)
+        {
+            cheat_click++;
         }
                    
     }
